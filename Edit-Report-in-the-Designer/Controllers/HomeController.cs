@@ -46,11 +46,6 @@ namespace Edit_Report_in_the_Designer.Controllers
             return StiNetCoreDesigner.GetReportResult(this, _hostEnvironment.WebRootPath + "\\reports\\SimpleList.mrt");
         }
 
-        public IActionResult GetReportData()
-        {
-            return StiNetCoreDesigner.GetReportDataResult(this, _hostEnvironment.WebRootPath + "\\data\\Demo.json");
-        }
-
         public IActionResult DesignerEvent()
         {
             return StiNetCoreDesigner.DesignerEventResult(this);

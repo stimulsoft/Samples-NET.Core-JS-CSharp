@@ -1,0 +1,25 @@
+﻿@using Stimulsoft.Report.NetCore;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<br />
+
+@Html.Stimulsoft().StiNetCoreDesigner("NetCoreDesigner1", new StiNetCoreDesignerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        DesignerEvent = "DesignerEvent"
+    },
+
+    Localization = "localization/de.xml",
+    LocalizationList =
+    {
+        "localization/de.xml",
+        "localization/en.xml",
+        "localization/it.xml",
+        "localization/sv.xml",
+        "localization/ru.xml"
+    }
+})

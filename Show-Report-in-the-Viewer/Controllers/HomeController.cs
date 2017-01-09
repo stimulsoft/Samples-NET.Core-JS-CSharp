@@ -46,11 +46,6 @@ namespace Show_Report_in_the_Viewer.Controllers
             return StiNetCoreViewer.GetReportResult(this, _hostEnvironment.WebRootPath + "\\reports\\SimpleList.mrt");
         }
 
-        public IActionResult GetReportData()
-        {
-            return StiNetCoreViewer.GetReportDataResult(this, _hostEnvironment.WebRootPath + "\\data\\Demo.json");
-        }
-
         public IActionResult ViewerEvent()
         {
             return StiNetCoreViewer.ViewerEventResult(this);

@@ -1,0 +1,17 @@
+﻿@using Stimulsoft.Report.NetCore;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<br />
+
+@Html.Stimulsoft().StiNetCoreViewer("NetCoreViewer1", new StiNetCoreViewerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        ViewerEvent = "ViewerEvent"
+    },
+
+    Theme = StiViewerTheme.Windows7
+})

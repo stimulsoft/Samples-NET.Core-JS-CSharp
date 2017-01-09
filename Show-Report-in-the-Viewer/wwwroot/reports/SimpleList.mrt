@@ -224,7 +224,7 @@
         "Ident": "StiJsonDatabase",
         "Name": "Demo",
         "Alias": "Demo",
-        "PathData": "Demo.json"
+        "PathData": "data/Demo.json"
       }
     }
   },
