@@ -5,10 +5,12 @@
 This repository has some examples (Visual Studio Projects) each in different folders:
 * Change-the-Viewer-Theme
 * Edit-Report-in-the-Designer
+* Export-Report-from-Code
 * Full-Screen-Mode-in-Designer
 * Localizing-the-Viewer
 * Manage-Report-Exporting
 * Managing-Data-in-Reports
+* Render-Report-from-Code
 * Save-Report-Template-in-the-Designer
 * Send-Report-by-Email
 * Showing-Interactive-Reports
