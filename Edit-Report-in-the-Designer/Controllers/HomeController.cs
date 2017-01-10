@@ -43,7 +43,11 @@ namespace Edit_Report_in_the_Designer.Controllers
 
         public IActionResult GetReport()
         {
-            return StiNetCoreDesigner.GetReportResult(this, _hostEnvironment.WebRootPath + "\\reports\\SimpleList.mrt");
+            // You can use report string or path to report template MRT file
+            string reportString = System.IO.File.ReadAllText(_hostEnvironment.WebRootPath + "\\reports\\SimpleList.mrt");
+            return StiNetCoreDesigner.GetReportResult(this, reportString);
+
+            //return StiNetCoreDesigner.GetReportResult(this, _hostEnvironment.WebRootPath + "\\reports\\SimpleList.mrt");
         }
 
         public IActionResult DesignerEvent()

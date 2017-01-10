@@ -49,9 +49,39 @@ namespace Managing_Data_in_Reports.Controllers
         public IActionResult GetReportData()
         {
             StiRequestParams requestParams = StiNetCoreViewer.GetRequestParams(this);
+
+            // JSON data
             if (requestParams.Connection.Type == StiConnectionType.JSON)
             {
                 return StiNetCoreViewer.GetReportDataResult(this, _hostEnvironment.WebRootPath + "\\data\\Demo.json");
+            }
+
+            // XML data
+            if (requestParams.Connection.Type == StiConnectionType.XML)
+            {
+                string pathData = requestParams.Connection.PathData;
+                string pathSchema = requestParams.Connection.PathSchema;
+
+                string data = pathSchema != null
+                    ? System.IO.File.ReadAllText(_hostEnvironment.WebRootPath + "\\" + pathSchema)
+                    : System.IO.File.ReadAllText(_hostEnvironment.WebRootPath + "\\" + pathData);
+
+                return StiNetCoreViewer.GetReportDataResult(this, data);
+                //return StiNetCoreViewer.GetReportDataResult(this, _hostEnvironment.WebRootPath + "\\" + pathData);
+            }
+
+            // SQL data
+            if (requestParams.Connection.Type == StiConnectionType.MSSQL)
+            {
+                string connectionString = requestParams.Connection.ConnectionString;
+                string queryString = requestParams.Connection.QueryString;
+
+                StiDataResult result = new StiDataResult();
+                result.Columns = new string[2] { "Column1", "Column2" };
+                result.Types = new string[2] { "number", "string" };
+                result.Rows = new string[3][] { new string[2] { "1", "Row1" }, new string[2] { "2", "Row2" }, new string[2] { "3", "Row3" } };
+
+                return StiNetCoreViewer.GetReportDataResult(this, result);
             }
 
             return StiNetCoreViewer.GetReportDataResult(this);

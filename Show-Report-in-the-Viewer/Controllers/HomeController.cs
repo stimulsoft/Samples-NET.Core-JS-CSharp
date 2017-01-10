@@ -43,7 +43,11 @@ namespace Show_Report_in_the_Viewer.Controllers
 
         public IActionResult GetReport()
         {
-            return StiNetCoreViewer.GetReportResult(this, _hostEnvironment.WebRootPath + "\\reports\\SimpleList.mrt");
+            // You can use report string or path to report template MRT file or document MDC file
+            string reportString = System.IO.File.ReadAllText(_hostEnvironment.WebRootPath + "\\reports\\SimpleList.mrt");
+            return StiNetCoreViewer.GetReportResult(this, reportString);
+
+            //return StiNetCoreViewer.GetReportResult(this, _hostEnvironment.WebRootPath + "\\reports\\SimpleList.mrt");
         }
 
         public IActionResult ViewerEvent()
