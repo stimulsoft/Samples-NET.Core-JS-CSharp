@@ -2308,7 +2308,7 @@
           }
         }
       },
-      "Stimulsoft.Reports.NetCore/2016.3.3-rc1": {
+      "Stimulsoft.Reports.NetCore/2016.3.5": {
         "type": "package",
         "dependencies": {
           "CoreCompat.System.Drawing": "1.0.0-beta006",
@@ -6396,14 +6396,14 @@
         "runtimes/win7-x86/native/sni.dll"
       ]
     },
-    "Stimulsoft.Reports.NetCore/2016.3.3-rc1": {
-      "sha512": "ZkOeXzWmEmcuUu/UVVJzfqaM58AOepKOIjKxN73SHPHPDA7Wju2HqTP66sLu98toVJIKkxR3aMAW7wRDs+YuRw==",
+    "Stimulsoft.Reports.NetCore/2016.3.5": {
+      "sha512": "NkgjoB9+0jFusHQj2sfGdHUuWS5SpoV5PWD717rMarJ4DoLJiws45i1CWmaz+0OvjFp3duC5jYF0PwcXrfDxHQ==",
       "type": "package",
-      "path": "Stimulsoft.Reports.NetCore/2016.3.3-rc1",
+      "path": "Stimulsoft.Reports.NetCore/2016.3.5",
       "files": [
-        "lib/netstandard1.6/Stimulsoft.Reports.NetCore.dll",
-        "stimulsoft.reports.netcore.2016.3.3-rc1.nupkg.sha512",
-        "stimulsoft.reports.netcore.nuspec"
+        "Stimulsoft.Reports.NetCore.2016.3.5.nupkg.sha512",
+        "Stimulsoft.Reports.NetCore.nuspec",
+        "lib/netstandard1.6/Stimulsoft.Reports.NetCore.dll"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -11307,7 +11307,7 @@
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 1.0.0",
       "Microsoft.NETCore.App >= 1.0.1",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0",
-      "Stimulsoft.Reports.NetCore >= 2016.3.3-rc1"
+      "Stimulsoft.Reports.NetCore >= 2016.3.5"
     ],
     ".NETCoreApp,Version=v1.0": []
   },

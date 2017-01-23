@@ -22,7 +22,7 @@
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
     "Microsoft.AspNetCore.Mvc": "1.1.0",
     "Microsoft.AspNetCore.Routing": "1.1.0",
-    "Stimulsoft.Reports.NetCore": "2016.3.3-rc1"
+    "Stimulsoft.Reports.NetCore": "2016.3.5"
   },
 
   "tools": {
