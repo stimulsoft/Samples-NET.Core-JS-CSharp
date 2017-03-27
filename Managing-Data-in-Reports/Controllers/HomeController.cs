@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 using Stimulsoft.Report.NetCore;
 
@@ -24,14 +20,14 @@ namespace Managing_Data_in_Reports.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Stimulsoft Reports.Web for .NET Core";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Stimulsoft";
 
             return View();
         }
@@ -76,11 +72,12 @@ namespace Managing_Data_in_Reports.Controllers
                 string connectionString = requestParams.Connection.ConnectionString;
                 string queryString = requestParams.Connection.QueryString;
 
-                StiDataResult result = new StiDataResult();
-                result.Columns = new string[2] { "Column1", "Column2" };
-                result.Types = new string[2] { "number", "string" };
-                result.Rows = new string[3][] { new string[2] { "1", "Row1" }, new string[2] { "2", "Row2" }, new string[2] { "3", "Row3" } };
-
+                StiDataResult result = new StiDataResult()
+                {
+                    Columns = new string[2] { "Column1", "Column2" },
+                    Types = new string[2] { "number", "string" },
+                    Rows = new string[3][] { new string[2] { "1", "Row1" }, new string[2] { "2", "Row2" }, new string[2] { "3", "Row3" } }
+                };
                 return StiNetCoreViewer.GetReportDataResult(this, result);
             }
 

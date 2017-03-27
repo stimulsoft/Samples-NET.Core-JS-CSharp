@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.NodeServices;
 
@@ -42,7 +39,7 @@ namespace Render_Report_from_Code.Controllers
             string result = await nodeServices.InvokeAsync<string>("./node/renderReport", reportPath);
             System.IO.File.WriteAllText("./Reports/" + fileName + ".mdc", result);
 
-            return Redirect("/?message=The report successfully rendered and saved to a " + fileName + ".mdc file.");
+            return Redirect("/?message=The report successfully rendered and saved to the " + fileName + ".mdc file.");
         }
     }
 }

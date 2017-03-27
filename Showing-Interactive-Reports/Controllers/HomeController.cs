@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 using Stimulsoft.Report.NetCore;
 
@@ -24,14 +20,14 @@ namespace Showing_Interactive_Reports.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Stimulsoft Reports.Web for .NET Core";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Stimulsoft";
 
             return View();
         }
@@ -60,7 +56,7 @@ namespace Showing_Interactive_Reports.Controllers
                 // Parameters
                 case 5: return StiNetCoreViewer.GetReportResult(this, _hostEnvironment.WebRootPath + "\\reports\\ParametersSelectingCountry.mrt");
             }
-            
+
             return StiNetCoreViewer.GetReportResult(this, _hostEnvironment.WebRootPath + "\\reports\\DrillDownSorting.mrt");
         }
 

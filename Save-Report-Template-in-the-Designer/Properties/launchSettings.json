@@ -1,9 +1,9 @@
-{
+﻿{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:50607/",
+      "applicationUrl": "http://localhost:50507/",
       "sslPort": 0
     }
   },
@@ -18,10 +18,10 @@
     "Save_Report_Template_in_the_Designer": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "http://localhost:50607"
     }
   }
 }
