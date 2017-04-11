@@ -10,6 +10,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Full-Screen-Mode-in-Designer
 * Localizing-the-Viewer
 * Manage-Report-Exporting
+* Manage-Report-Parameters-and-Interactions
 * Managing-Data-in-Reports
 * Render-Report-from-Code
 * Save-Report-Template-in-the-Designer
