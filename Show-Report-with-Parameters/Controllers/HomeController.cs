@@ -11,6 +11,10 @@ namespace Show_Report_with_Parameters.Controllers
 
         public HomeController(IHostingEnvironment hostEnvironment)
         {
+            //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+
             _hostEnvironment = hostEnvironment;
         }
 
