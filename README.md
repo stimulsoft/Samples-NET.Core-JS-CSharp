@@ -28,7 +28,7 @@ In order to start simply open the Visual Studio solution file in the IDE Visual 
 # About Stimulsoft Reports.Web for .NET Core
 Stimulsoft Reports.Web for .NET Core is a reporting tool designed to create reports in the Internet using a client-server technology. The .NET Core script works on the server side and controls the report generation. The JavaScript report engine works on the client side and provides a universal mechanism for reports generation almost on any client. Fast and powerful report engine, rich and intuitive interface, deployment and licensing.
 
-You can try the [Live Demo](http://demo.stimulsoft.com)
+You can try the [Live Demo](http://demo.stimulsoft.com/#Js)
 
 Read more about [Stimulsoft Reports.Web](https://www.stimulsoft.com/en/products/reports-web)
 
