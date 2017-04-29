@@ -32,4 +32,6 @@ You can try the [Live Demo](http://demo.stimulsoft.com/#Js)
 
 Read more about [Stimulsoft Reports.Web](https://www.stimulsoft.com/en/products/reports-web)
 
+[Free Download](https://www.stimulsoft.com/en/downloads)
+
 [NuGet](https://www.nuget.org/packages/Stimulsoft.Reports.NetCore)
