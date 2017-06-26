@@ -829,7 +829,7 @@
     <ShowDescription>Toon Omschrijving</ShowDescription>
     <SLPreview>Silverlight Voorbeeld</SLPreview>
     <title>Ontwerper</title>
-    <WebPreview>Web Voorbeeld</WebPreview>
+    <WebPreview>Flash Voorbeeld</WebPreview>
   </FormDesigner>
   <FormDictionaryDesigner>
     <Actions>Acties</Actions>
@@ -3125,7 +3125,7 @@
     <SelectAllFromRight>Selecteer Alles van Rechts</SelectAllFromRight>
     <SwitchToDerivedTable>Schakel over naar Afgeleide Tabel</SwitchToDerivedTable>
     <Tables>Tabellen</Tables>
-    <UnexpectedTokenAt>Onverwacht teken \"{0}\" op lijn {1}, pos {2}!</UnexpectedTokenAt>
+    <UnexpectedTokenAt>Onverwacht teken "{0}" op lijn {1}, pos {2}!</UnexpectedTokenAt>
     <Unions>Unies</Unions>
     <UnionSubMenu>Unie</UnionSubMenu>
     <ViewQuery>Toon Query</ViewQuery>

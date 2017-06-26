@@ -6,8 +6,9 @@
     // Load and render the report template
     var report = new Stimulsoft.Report.StiReport();
     report.loadFile(reportPath);
-    report.render();
-    var jsonDocument = report.saveDocumentToJsonString();
-
-    callback(/* error */null, jsonDocument);
+    report.renderAsync(function () {
+        // Return JSON report document
+        var jsonDocument = report.saveDocumentToJsonString();
+        callback(/* error */null, jsonDocument);
+    });
 };

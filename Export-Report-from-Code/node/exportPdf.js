@@ -6,14 +6,15 @@
     // Load and render the report template
     var report = new Stimulsoft.Report.StiReport();
     report.loadFile(reportPath);
-    report.render();
+    report.renderAsync(function () {
+        // Export report to PDF bytes
+        var settings = new Stimulsoft.Report.Export.StiPdfExportSettings();
+        var service = new Stimulsoft.Report.Export.StiPdfExportService();
+        var stream = new Stimulsoft.System.IO.MemoryStream();
+        service.exportTo(report, stream, settings);
 
-    // Export report to PDF bytes
-    var settings = new Stimulsoft.Report.Export.StiPdfExportSettings();
-    var service = new Stimulsoft.Report.Export.StiPdfExportService();
-    var stream = new Stimulsoft.System.IO.MemoryStream();
-    service.exportTo(report, stream, settings);
-    var data = stream.toArray();
-
-    callback(/* error */null, data);
+        // Return PDF data stream
+        var data = stream.toArray();
+        callback(/* error */null, data);
+    });
 };

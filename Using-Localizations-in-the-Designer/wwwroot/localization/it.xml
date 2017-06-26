@@ -1004,7 +1004,7 @@
     <ShowDescription>Mostra descrizioni</ShowDescription>
     <SLPreview>Anteprima Silverlight</SLPreview>
     <title>Finestra di progettazione</title>
-    <WebPreview>Anteprima web</WebPreview>
+    <WebPreview>Anteprima Flash</WebPreview>
   </FormDesigner>
   <FormDictionaryDesigner>
     <Actions>Azioni</Actions>
@@ -3494,7 +3494,7 @@
     <SelectAllFromRight>Seleziona tutto da Destra</SelectAllFromRight>
     <SwitchToDerivedTable>Passa a Tabella Derivata</SwitchToDerivedTable>
     <Tables>Tabelle</Tables>
-    <UnexpectedTokenAt>Token inaspettato \"{0}\" alla linea {1}, pos {2}!</UnexpectedTokenAt>
+    <UnexpectedTokenAt>Token inaspettato "{0}" alla linea {1}, pos {2}!</UnexpectedTokenAt>
     <Unions>Unions</Unions>
     <UnionSubMenu>Union</UnionSubMenu>
     <ViewQuery>Mostra Query</ViewQuery>
