@@ -5,9 +5,9 @@
 # Overview
 This repository has some examples (Visual Studio Projects) each in different folders:
 * Change-the-Viewer-Theme
+* Custom-Designer-Width-Height
 * Edit-Report-in-the-Designer
 * Export-Report-from-Code
-* Full-Screen-Mode-in-Designer
 * Localizing-the-Viewer
 * Manage-Report-Exporting
 * Manage-Report-Parameters-and-Interactions
