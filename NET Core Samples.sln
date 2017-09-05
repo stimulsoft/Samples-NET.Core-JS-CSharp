@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Save-Report-Template-in-the
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using-Localizations-in-the-Designer", "Using-Localizations-in-the-Designer\Using-Localizations-in-the-Designer.csproj", "{A478CEBF-DB8F-4033-82C1-FCB2424BDC17}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Full-Screen-Mode-in-Designer", "Full-Screen-Mode-in-Designer\Full-Screen-Mode-in-Designer.csproj", "{05D8B74C-EC6C-417A-8415-B48A0EC982D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Custom-Designer-Width-Height", "Custom-Designer-Width-Height\Custom-Designer-Width-Height.csproj", "{05D8B74C-EC6C-417A-8415-B48A0EC982D5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manage-Report-Exporting", "Manage-Report-Exporting\Manage-Report-Exporting.csproj", "{8E919933-AA86-4720-9B3F-12BAC8CB5E06}"
 EndProject

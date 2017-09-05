@@ -1,0 +1,18 @@
+﻿@using Stimulsoft.Report.NetCore;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<br />
+
+@Html.Stimulsoft().StiNetCoreDesigner("NetCoreDesigner1", new StiNetCoreDesignerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        DesignerEvent = "DesignerEvent"
+    },
+
+    Width = "100%",
+    Height = "800px"
+})
