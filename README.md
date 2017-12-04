@@ -2,6 +2,8 @@
 
 #### This repository contains the source code of the examples of usage Stimulsoft Reports.Web reporting tool in the ASP.NET Core applications, using C# code and JavaScript report engine with HTML5 components. This product and examples are compatible with .NET Core 1.1 and higher.
 
+We recommend using the updated [.NET Core 2.0 examples](https://github.com/stimulsoft/Samples-NET.Core-MVC-CSharp) that have a full-featured .NET Core report engine and advanced functionality.
+
 # Overview
 This repository has some examples (Visual Studio Projects) each in different folders:
 * Change-the-Viewer-Theme
