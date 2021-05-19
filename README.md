@@ -1,3 +1,9 @@
+## Attention!
+
+This repository is archived, and the source code of these examples is no longer updated, because the framework used in the examples is outdated. Compatibility with new versions of the product is not guaranteed. Use examples with new product versions for [.NET Core 3.1](https://github.com/stimulsoft/Samples-NET.Core-3.1-MVC-CSharp) and [.NET 5.0](https://github.com/stimulsoft/Samples-NET-5.0-MVC-CSharp) frameworks.
+
+---
+
 # ASP.NET Core C# samples with JavaScript report engine
 
 #### This repository contains the source code of the examples of usage Stimulsoft Reports.Web reporting tool in the ASP.NET Core applications, using C# code and JavaScript report engine with HTML5 components. This product and examples are compatible with .NET Core 1.1 and higher.
